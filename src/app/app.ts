@@ -5,10 +5,11 @@ import { Career } from './career/career';
 import { Hero } from './hero/hero';
 import { Projects } from './projects/projects';
 import { Contact } from './contact/contact';
+import { Navbar } from './navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Hero, AboutMe, Career, Projects, Contact],
+  imports: [RouterOutlet, Hero, AboutMe, Career, Projects, Contact, Navbar],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
