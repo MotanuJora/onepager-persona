@@ -1,0 +1,41 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid #e8e8e8;
+}
+
+.contact-tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.contact-icon {
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.contact-icon:hover {
+    opacity: 0.45;
+}
+
+.contact-icon svg {
+    width: 26px;
+    height: 26px;
+}
