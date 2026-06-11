@@ -26,6 +26,7 @@ nav {
 }
 
 nav a {
+    cursor: pointer;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.875rem;
