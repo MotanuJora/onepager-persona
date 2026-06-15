@@ -2,13 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     padding: 1.25rem 3rem 1.25rem 1.5rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e8e8e8;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
     font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+:host(.scrolled) {
+    background-color: #ffffff;
+    border-bottom-color: #e8e8e8;
 }
 
 h1 {
@@ -16,6 +24,11 @@ h1 {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.04em;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+:host(.scrolled) h1 {
     color: #1a1a1a;
 }
 
@@ -33,10 +46,18 @@ nav a {
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #555;
-    transition: color 0.2s ease;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
+    color: #ffffff;
+}
+
+:host(.scrolled) nav a {
+    color: #555;
+}
+
+:host(.scrolled) nav a:hover {
     color: #1a1a1a;
 }
