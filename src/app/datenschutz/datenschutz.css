@@ -43,3 +43,20 @@
 .legal-page a {
     color: #1a1a1a;
 }
+
+.legal-page ul {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.legal-page ul li {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.legal-stand {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #aaa;
+}
