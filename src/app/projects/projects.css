@@ -109,3 +109,26 @@
 .project-link:hover {
     opacity: 0.5;
 }
+
+@media (max-width: 900px) {
+    .projects {
+        padding: 4rem 2rem;
+    }
+
+    .project-row,
+    .project-row.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 3rem 1.25rem;
+    }
+
+    .projects h2 {
+        font-size: 1.75rem;
+    }
+}

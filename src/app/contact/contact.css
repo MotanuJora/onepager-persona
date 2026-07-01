@@ -39,3 +39,17 @@
     width: 26px;
     height: 26px;
 }
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 3rem 1.25rem;
+    }
+
+    .contact-tagline {
+        font-size: 1.05rem;
+    }
+
+    .contact-links {
+        gap: 1.25rem;
+    }
+}
